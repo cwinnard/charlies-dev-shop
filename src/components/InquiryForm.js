@@ -2,7 +2,7 @@ import React from 'react';
 
 const InquiryForm = () => (
     <div className="InquiryForm">
-        <form action="https://charlie-system.herokuapp.com" method="post">
+        <form action="https://charlie-system.herokuapp.com/inquiry/new" method="post">
             <h4> Please describe your request </h4>
             <label htmlFor="email">
                 Email*:
