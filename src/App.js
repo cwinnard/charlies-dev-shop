@@ -1,5 +1,5 @@
-/* eslint react/prefer-stateless-function: 0 */
 /* eslint react/jsx-one-expression-per-line: 0 */
+/* eslint react/prefer-stateless-function: 0 */
 
 import React, { Component } from 'react';
 import logo from './logo.svg';
