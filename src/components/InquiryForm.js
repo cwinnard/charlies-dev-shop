@@ -10,13 +10,13 @@ const InquiryForm = () => (
             </label>
             <br />
             <label htmlFor="businessType">
-                Business Type:
-                <input type="text" name="businessType" />
+                Business Type*:
+                <input type="text" name="businessType" required />
             </label>
             <br />
             <label htmlFor="businessDescription">
-                Business Description*:
-                <input type="text" name="businessDescription" required />
+                Business Description:
+                <input type="text" name="businessDescription" />
             </label>
             <br />
             <label htmlFor="request">
