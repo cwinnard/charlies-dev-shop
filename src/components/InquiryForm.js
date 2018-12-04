@@ -20,7 +20,7 @@ import React from 'react';
 const InquiryForm = () => (
     <form>
         <FormControl>
-            <InputLabel htmlfor="request">
+            <InputLabel htmlFor="request">
                 MVP Request
             </InputLabel>
             <br />
@@ -32,7 +32,7 @@ const InquiryForm = () => (
         <br />
         <br />
         <FormControl>
-            <InputLabel htmlfor="email">
+            <InputLabel htmlFor="email">
                 email
             </InputLabel>
             <br />
@@ -44,7 +44,7 @@ const InquiryForm = () => (
         <br />
         <br />
         <FormControl>
-            <InputLabel htmlfor="businessType">
+            <InputLabel htmlFor="businessType">
                 businessType
             </InputLabel>
             <br />
@@ -56,7 +56,7 @@ const InquiryForm = () => (
         <br />
         <br />
         <FormControl>
-            <InputLabel htmlfor="businessDescription">
+            <InputLabel htmlFor="businessDescription">
                 businessDescription
             </InputLabel>
             <br />
@@ -66,12 +66,14 @@ const InquiryForm = () => (
             />
         </FormControl>
         <Button
-            color="contrastText"
+            color="primary"
             variant="contained"
             size="large"
         >
             Submit
         </Button>
+        <br />
+        <br />
     </form>
     // <div className="InquiryForm">
     //
