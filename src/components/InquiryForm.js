@@ -4,7 +4,6 @@
 import {
     Button,
     FormControl,
-    InputLabel,
     TextField,
 } from '@material-ui/core';
 import React from 'react';
@@ -20,51 +19,36 @@ import React from 'react';
 const InquiryForm = () => (
     <form>
         <FormControl>
-            <InputLabel htmlFor="request">
-                MVP Request
-            </InputLabel>
-            <br />
-            <TextField
-                label="testing"
-                value=""
-            />
-        </FormControl>
-        <br />
-        <br />
-        <FormControl>
-            <InputLabel htmlFor="email">
-                email
-            </InputLabel>
-            <br />
             <TextField
                 label="email"
-                value=""
             />
         </FormControl>
         <br />
         <br />
         <FormControl>
-            <InputLabel htmlFor="businessType">
-                businessType
-            </InputLabel>
-            <br />
             <TextField
                 label="businessType"
-                value=""
             />
         </FormControl>
         <br />
         <br />
         <FormControl>
-            <InputLabel htmlFor="businessDescription">
-                businessDescription
-            </InputLabel>
             <br />
             <TextField
                 label="businessDescription"
-                value=""
             />
         </FormControl>
+        <br />
+        <br />
+        <FormControl>
+            <TextField
+                label="request"
+                multiline
+                rowsMax="4"
+            />
+        </FormControl>
+        <br />
+        <br />
         <Button
             color="primary"
             variant="contained"
@@ -72,8 +56,6 @@ const InquiryForm = () => (
         >
             Submit
         </Button>
-        <br />
-        <br />
     </form>
     // <div className="InquiryForm">
     //
