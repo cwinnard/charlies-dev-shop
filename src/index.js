@@ -13,22 +13,10 @@ const store = createStore(appReducer);
 const theme = createMuiTheme({palette:
     {
       primary: {
-        light: 'white',
-        main: 'red',
-        dark: 'required',
-        contrastText: 'purple',
-      },
-      secondary: {
-        light: 'white',
-        main: 'red',
-        dark: 'red',
-        contrastText: 'purple',
-      },
-      error: {
-        light: 'white',
-        main: 'red',
-        dark: 'red',
-        contrastText: 'purple',
+        light: '#cbd4c2',
+        main: '#50514f',
+        dark: '#3b299',
+        contrastText: '#006cb0',
       },
   }
 })
