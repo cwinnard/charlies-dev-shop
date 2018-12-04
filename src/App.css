@@ -5,6 +5,5 @@
 .card {
     width: 50%;
     height: 50%;
-    top: 100px;
-    margin: 0 auto;
+    margin: 10vh auto;
 }

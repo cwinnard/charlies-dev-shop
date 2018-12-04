@@ -11,7 +11,7 @@ import {
 import React from 'react';
 
 
-const NEW_INQUIRY_URL = 'https://www.charlie-system.herokuapp.com/inquiry/new';
+const NEW_INQUIRY_URL = 'https://charlie-system.herokuapp.com/inquiry/new';
 
 const formData = {
     email: '',
