@@ -15,19 +15,19 @@ const theme = createMuiTheme({palette:
       primary: {
         light: 'white',
         main: 'red',
-        dark: 'black',
+        dark: 'required',
         contrastText: 'purple',
       },
       secondary: {
         light: 'white',
         main: 'red',
-        dark: 'black',
+        dark: 'red',
         contrastText: 'purple',
       },
       error: {
         light: 'white',
         main: 'red',
-        dark: 'black',
+        dark: 'red',
         contrastText: 'purple',
       },
   }

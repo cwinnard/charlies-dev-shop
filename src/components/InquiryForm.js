@@ -1,7 +1,12 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 // import axios from 'axios';
-import { FormControl, InputLabel, TextField } from '@material-ui/core';
+import {
+    Button,
+    FormControl,
+    InputLabel,
+    TextField
+} from '@material-ui/core';
 import React from 'react';
 
 // handleSubmit = (event) => {
@@ -60,6 +65,13 @@ const InquiryForm = () => (
                 value=""
             />
         </FormControl>
+        <Button
+            color="contrastText"
+            variant="contained"
+            size="large"
+        >
+            Submit
+        </Button>
     </form>
     // <div className="InquiryForm">
     //
