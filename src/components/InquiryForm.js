@@ -19,7 +19,7 @@ import React from 'react';
 // }
 
 const InquiryForm = () => (
-    <Card>
+    <Card className="card">
         <CardContent>
             <form>
                 <FormControl>
