@@ -3,9 +3,11 @@
 import { createMuiTheme,  MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 
+const store = {};
 const theme = createMuiTheme({palette:
     {
       primary: {
@@ -30,8 +32,10 @@ const theme = createMuiTheme({palette:
 })
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme} >
-        <App />
-    </MuiThemeProvider>,
+    <Provider store={store}>
+        <MuiThemeProvider theme={theme} >
+            <App />
+            </MuiThemeProvider>
+    </Provider>,
     document.getElementById('root')
 );
