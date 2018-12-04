@@ -10,15 +10,8 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 
-// handleSubmit = (event) => {
-//     axios.post('https://charlie-system.herokuapp.com/inquiry/new', {}).then(() => {
-//         console.log('success');
-//     }, (e) => {
-//         console.log(e);
-//     });
-// }
 
-const NEW_INQUIRY_URL = 'https://www.herokuapp.charlie-system.com/inquiry/new';
+const NEW_INQUIRY_URL = 'https://www.charlie-system.herokuapp.com/inquiry/new';
 
 const formData = {
     email: '',
@@ -27,14 +20,24 @@ const formData = {
     request: '',
 };
 
-const setData = (e) => {
-    console.log(e);
-    console.log(e.target);
-    // formData[key] = value;
-    console.log(formData);
+const setEmail = (e) => {
+    formData.email = e.target.value;
+};
+
+const setBusinessType = (e) => {
+    formData.businessType = e.target.value;
+};
+
+const setBusinessDescription = (e) => {
+    formData.businessDescription = e.target.value;
+};
+
+const setRequest = (e) => {
+    formData.request = e.target.value;
 };
 
 const postForm = () => {
+    console.log(formData);
     axios.post(NEW_INQUIRY_URL, formData).then((res) => {
         console.log(res);
     }, (e) => {
@@ -49,7 +52,7 @@ const InquiryForm = () => (
                 <FormControl>
                     <TextField
                         label="email"
-                        onChange={setData}
+                        onChange={setEmail}
                     />
                 </FormControl>
                 <br />
@@ -57,7 +60,7 @@ const InquiryForm = () => (
                 <FormControl>
                     <TextField
                         label="businessType"
-                        onChange={setData}
+                        onChange={setBusinessType}
                     />
                 </FormControl>
                 <br />
@@ -66,7 +69,7 @@ const InquiryForm = () => (
                     <br />
                     <TextField
                         label="businessDescription"
-                        onChange={setData}
+                        onChange={setBusinessDescription}
                     />
                 </FormControl>
                 <br />
@@ -76,7 +79,7 @@ const InquiryForm = () => (
                         label="request"
                         multiline
                         rowsMax="4"
-                        onChange={setData}
+                        onChange={setRequest}
                     />
                 </FormControl>
                 <br />
