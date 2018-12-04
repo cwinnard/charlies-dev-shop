@@ -1,6 +1,6 @@
 /* eslint react/prefer-stateless-function: 0 */
 
-// import axios from 'axios';
+import axios from 'axios';
 import {
     Button,
     Card,
@@ -18,6 +18,28 @@ import React from 'react';
 //     });
 // }
 
+const NEW_INQUIRY_URL = 'https://www.herokuapp.charlie-system.com/inquiry/new';
+
+const formData = {
+    email: '',
+    businessType: '',
+    businessDescription: '',
+    request: '',
+};
+
+const setData = (key, value) => {
+    formData[key] = value;
+    console.log(formData);
+};
+
+const postForm = () => {
+    axios.post(NEW_INQUIRY_URL, formData).then((res) => {
+        console.log(res);
+    }, (e) => {
+        console.log(e);
+    });
+};
+
 const InquiryForm = () => (
     <Card className="card">
         <CardContent>
@@ -25,6 +47,7 @@ const InquiryForm = () => (
                 <FormControl>
                     <TextField
                         label="email"
+                        onChange={setData}
                     />
                 </FormControl>
                 <br />
@@ -32,6 +55,7 @@ const InquiryForm = () => (
                 <FormControl>
                     <TextField
                         label="businessType"
+                        onChange={setData}
                     />
                 </FormControl>
                 <br />
@@ -40,6 +64,7 @@ const InquiryForm = () => (
                     <br />
                     <TextField
                         label="businessDescription"
+                        onChange={setData}
                     />
                 </FormControl>
                 <br />
@@ -49,6 +74,7 @@ const InquiryForm = () => (
                         label="request"
                         multiline
                         rowsMax="4"
+                        onChange={setData}
                     />
                 </FormControl>
                 <br />
@@ -57,6 +83,7 @@ const InquiryForm = () => (
                     color="primary"
                     variant="contained"
                     size="large"
+                    onClick={postForm}
                 >
                     Submit
                 </Button>

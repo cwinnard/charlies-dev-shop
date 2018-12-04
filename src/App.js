@@ -11,7 +11,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.loaded}
                 <InquiryForm />
             </div>
         );
@@ -20,9 +19,18 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
     const { loaded } = state;
+    const { panel } = state;
     return {
         loaded,
+        panel,
     };
 };
 
-export default connect(mapStateToProps, null)(App);
+const mapDispatchToProps = (dispatch) => {
+    const postForm = () => { dispatch(postForm()); };
+    return {
+        postForm,
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
