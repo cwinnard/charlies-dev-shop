@@ -24,6 +24,8 @@ const InquiryForm = () => (
                 value=""
             />
         </FormControl>
+        <br />
+        <br />
         <FormControl>
             <InputLabel htmlfor="email">
                 email
@@ -31,7 +33,31 @@ const InquiryForm = () => (
             <br />
             <TextField
                 label="email"
-                value="@act.ion"
+                value=""
+            />
+        </FormControl>
+        <br />
+        <br />
+        <FormControl>
+            <InputLabel htmlfor="businessType">
+                businessType
+            </InputLabel>
+            <br />
+            <TextField
+                label="businessType"
+                value=""
+            />
+        </FormControl>
+        <br />
+        <br />
+        <FormControl>
+            <InputLabel htmlfor="businessDescription">
+                businessDescription
+            </InputLabel>
+            <br />
+            <TextField
+                label="businessDescription"
+                value=""
             />
         </FormControl>
     </form>
