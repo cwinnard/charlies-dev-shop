@@ -7,8 +7,9 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
 import App from './App';
+import appReducer from './reducers/appReducer';
 
-const store = createStore();
+const store = createStore(appReducer);
 const theme = createMuiTheme({palette:
     {
       primary: {
