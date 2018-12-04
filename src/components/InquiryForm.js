@@ -13,17 +13,30 @@ import React from 'react';
 // }
 
 const InquiryForm = () => (
-    <FormControl>
-        <InputLabel htmlfor="request">
-            MVP Request
-        </InputLabel>
-        <TextField
-            label="testing"
-            value="terteroni"
-        />
-    </FormControl>
+    <form>
+        <FormControl>
+            <InputLabel htmlfor="request">
+                MVP Request
+            </InputLabel>
+            <br />
+            <TextField
+                label="testing"
+                value=""
+            />
+        </FormControl>
+        <FormControl>
+            <InputLabel htmlfor="email">
+                email
+            </InputLabel>
+            <br />
+            <TextField
+                label="email"
+                value="@act.ion"
+            />
+        </FormControl>
+    </form>
     // <div className="InquiryForm">
-    //     <form onSubmit={onSubmit()}>
+    //
     //         <h4> Please describe your request </h4>
     //         <label htmlFor="email">
     //             Email*:
