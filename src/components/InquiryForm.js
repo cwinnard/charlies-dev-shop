@@ -27,8 +27,10 @@ const formData = {
     request: '',
 };
 
-const setData = (key, value) => {
-    formData[key] = value;
+const setData = (e) => {
+    console.log(e);
+    console.log(e.target);
+    // formData[key] = value;
     console.log(formData);
 };
 
