@@ -7,3 +7,9 @@
     height: 50%;
     margin: 10vh auto;
 }
+
+.formHeader {
+    background-color: #006db0;
+    height: 10px;
+    width: 100%;
+}

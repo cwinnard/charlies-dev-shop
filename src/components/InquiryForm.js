@@ -37,7 +37,6 @@ const setRequest = (e) => {
 };
 
 const postForm = () => {
-    console.log(formData);
     axios.post(NEW_INQUIRY_URL, formData).then((res) => {
         console.log(res);
     }, (e) => {
@@ -48,6 +47,7 @@ const postForm = () => {
 const InquiryForm = () => (
     <Card className="card">
         <CardContent>
+            <div className="formHeader" />
             <form>
                 <FormControl>
                     <TextField
