@@ -58,7 +58,7 @@ const InquiryForm = () => (
                 <h3>
                     Request an MVP
                 </h3>
-                <Grid spacing={24}>
+                <Grid container spacing={24}>
                     <Grid item xs={6}>
                         <FormControl>
                             <TextField
