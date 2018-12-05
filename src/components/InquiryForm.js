@@ -92,7 +92,7 @@ const InquiryForm = () => (
                                 rows="3"
                                 rowsMax="6"
                                 onChange={setBusinessDescription}
-                                style={{ top: '-10px' }}
+                                style={{ top: '-21px' }}
                             />
                         </FormControl>
                         <br />
