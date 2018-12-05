@@ -105,8 +105,6 @@ const InquiryForm = () => (
                                 onChange={setRequest}
                             />
                         </FormControl>
-                        <br />
-                        <br />
                     </Grid>
                 </Grid>
                 <Button
