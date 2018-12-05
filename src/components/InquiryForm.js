@@ -49,7 +49,9 @@ const InquiryForm = () => (
         <div className="formHeader" />
         <CardContent>
             <form>
-                Request an MVP
+                <h3>
+                    Request an MVP
+                </h3>
                 <FormControl>
                     <TextField
                         label="email"
