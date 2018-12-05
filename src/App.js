@@ -12,7 +12,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <AppBar />
+                <AppBar position="static" color="default"/>
                 <InquiryForm />
             </div>
         );
