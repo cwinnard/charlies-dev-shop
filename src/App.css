@@ -10,6 +10,16 @@
 
 .formHeader {
     background-color: #006db0;
-    height: 25px;
+    height: 35px;
     width: 100%;
+}
+
+.formLeft {
+    width: 50%;
+    left: 0;
+}
+
+.formRight: {
+    width: 50%;
+    right: 0;
 }

@@ -14,10 +14,15 @@ import React from 'react';
 const NEW_INQUIRY_URL = 'https://charlie-system.herokuapp.com/inquiry/new';
 
 const formData = {
+    username: '',
     email: '',
     businessType: '',
     businessDescription: '',
     request: '',
+};
+
+const setUsername = (e) => {
+    formData.username = e.target.value;
 };
 
 const setEmail = (e) => {
@@ -52,41 +57,55 @@ const InquiryForm = () => (
                 <h3>
                     Request an MVP
                 </h3>
-                <FormControl>
-                    <TextField
-                        label="email"
-                        onChange={setEmail}
-                    />
-                </FormControl>
-                <br />
-                <br />
-                <FormControl>
-                    <TextField
-                        label="businessType"
-                        onChange={setBusinessType}
-                    />
-                </FormControl>
-                <br />
-                <br />
-                <FormControl>
+                <div className="formLeft">
+                    <FormControl>
+                        <TextField
+                            label="username"
+                            onChange={setUsername}
+                        />
+                    </FormControl>
                     <br />
-                    <TextField
-                        label="businessDescription"
-                        onChange={setBusinessDescription}
-                    />
-                </FormControl>
-                <br />
-                <br />
-                <FormControl>
-                    <TextField
-                        label="request"
-                        multiline
-                        rowsMax="4"
-                        onChange={setRequest}
-                    />
-                </FormControl>
-                <br />
-                <br />
+                    <br />
+                    <FormControl>
+                        <TextField
+                            label="email"
+                            onChange={setEmail}
+                        />
+                    </FormControl>
+                    <br />
+                    <br />
+                    <FormControl>
+                        <TextField
+                            label="businessType"
+                            onChange={setBusinessType}
+                        />
+                    </FormControl>
+                </div>
+                <div className="formRight">
+                    <FormControl>
+                        <br />
+                        <TextField
+                            label="businessDescription"
+                            multiline
+                            rows="3"
+                            rowsMax="6"
+                            onChange={setBusinessDescription}
+                        />
+                    </FormControl>
+                    <br />
+                    <br />
+                    <FormControl>
+                        <TextField
+                            label="request"
+                            multiline
+                            rows="3"
+                            rowsMax="6"
+                            onChange={setRequest}
+                        />
+                    </FormControl>
+                    <br />
+                    <br />
+                </div>
                 <Button
                     color="primary"
                     variant="contained"
