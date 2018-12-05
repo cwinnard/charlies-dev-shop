@@ -6,6 +6,7 @@ import {
     Card,
     CardContent,
     FormControl,
+    Grid,
     TextField,
 } from '@material-ui/core';
 import React from 'react';
@@ -57,55 +58,57 @@ const InquiryForm = () => (
                 <h3>
                     Request an MVP
                 </h3>
-                <div className="formLeft">
-                    <FormControl>
-                        <TextField
-                            label="username"
-                            onChange={setUsername}
-                        />
-                    </FormControl>
-                    <br />
-                    <br />
-                    <FormControl>
-                        <TextField
-                            label="email"
-                            onChange={setEmail}
-                        />
-                    </FormControl>
-                    <br />
-                    <br />
-                    <FormControl>
-                        <TextField
-                            label="businessType"
-                            onChange={setBusinessType}
-                        />
-                    </FormControl>
-                </div>
-                <div className="formRight">
-                    <FormControl>
+                <Grid spacing="12">
+                    <Grid item xs="6">
+                        <FormControl>
+                            <TextField
+                                label="username"
+                                onChange={setUsername}
+                            />
+                        </FormControl>
                         <br />
-                        <TextField
-                            label="businessDescription"
-                            multiline
-                            rows="3"
-                            rowsMax="6"
-                            onChange={setBusinessDescription}
-                        />
-                    </FormControl>
-                    <br />
-                    <br />
-                    <FormControl>
-                        <TextField
-                            label="request"
-                            multiline
-                            rows="3"
-                            rowsMax="6"
-                            onChange={setRequest}
-                        />
-                    </FormControl>
-                    <br />
-                    <br />
-                </div>
+                        <br />
+                        <FormControl>
+                            <TextField
+                                label="email"
+                                onChange={setEmail}
+                            />
+                        </FormControl>
+                        <br />
+                        <br />
+                        <FormControl>
+                            <TextField
+                                label="businessType"
+                                onChange={setBusinessType}
+                            />
+                        </FormControl>
+                    </Grid>
+                    <Grid item xs="6">
+                        <FormControl>
+                            <br />
+                            <TextField
+                                label="businessDescription"
+                                multiline
+                                rows="3"
+                                rowsMax="6"
+                                onChange={setBusinessDescription}
+                            />
+                        </FormControl>
+                        <br />
+                        <br />
+                        <FormControl>
+                            <TextField
+                                label="request"
+                                multiline
+                                rows="3"
+                                rowsMax="6"
+                                onChange={setRequest}
+                            />
+                        </FormControl>
+                        <br />
+                        <br />
+                    </Grid>
+                </Grid>
                 <Button
                     color="primary"
                     variant="contained"
