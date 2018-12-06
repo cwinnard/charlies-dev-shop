@@ -5,7 +5,6 @@ import {
     AppBar,
     IconButton,
     Menu,
-    MenuIcon,
     MenuItem,
     Toolbar,
 } from '@material-ui/core';
@@ -25,7 +24,7 @@ class App extends Component {
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar>
                         <IconButton>
-                            <MenuIcon />
+                            CLICK
                         </IconButton>
                         <Menu>
                             <MenuItem>
