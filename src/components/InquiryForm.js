@@ -59,7 +59,7 @@ const InquiryForm = () => (
                     Request an MVP
                 </h3>
                 <Grid container spacing={24}>
-                    <Grid item xs={6}>
+                    <Grid item sm={6} xs={12}>
                         <FormControl>
                             <TextField
                                 label="username"
@@ -83,7 +83,7 @@ const InquiryForm = () => (
                             />
                         </FormControl>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item sm={6} xs={12}>
                         <FormControl>
                             <br />
                             <TextField
