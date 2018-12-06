@@ -10,9 +10,12 @@ import InquiryForm from './components/InquiryForm';
 
 class App extends Component {
     render() {
+        const name = 'charlie\'s dev shop';
         return (
             <div className="App">
-                <AppBar position="static" color="default" />
+                <AppBar position="static" color="default">
+                    {name}
+                </AppBar>
                 <InquiryForm />
             </div>
         );
