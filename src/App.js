@@ -19,7 +19,7 @@ class App extends Component {
                     {name}
                 </AppBar>
                 <Switch>
-                    <Route path="/" componrnt={ProductsCard} />
+                    <Route exact path="/" componrnt={ProductsCard} />
                     <Route path="/inquiry" componrnt={InquiryForm} />
                 </Switch>
             </div>
