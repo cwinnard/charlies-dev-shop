@@ -19,8 +19,8 @@ class App extends Component {
                     {name}
                 </AppBar>
                 <Switch>
-                    <Route exact path="/" componrnt={ProductsCard} />
-                    <Route path="/inquiry" componrnt={InquiryForm} />
+                    <Route exact path="/" component={ProductsCard} />
+                    <Route path="/inquiry" component={InquiryForm} />
                 </Switch>
             </div>
         );
