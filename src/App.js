@@ -4,9 +4,11 @@
 import { AppBar } from '@material-ui/core';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import InquiryForm from './components/InquiryForm';
+import ProductsCard from './components/ProductsCard';
 
 class App extends Component {
     render() {
@@ -16,7 +18,10 @@ class App extends Component {
                 <AppBar className="header" position="static" color="primary">
                     {name}
                 </AppBar>
-                <InquiryForm />
+                <Switch>
+                    <Route path="/" componrnt={ProductsCard} />
+                    <Route path="/inquiry" componrnt={InquiryForm} />
+                </Switch>
             </div>
         );
     }

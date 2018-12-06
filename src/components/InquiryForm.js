@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import axios from 'axios';
 import {
     Button,
