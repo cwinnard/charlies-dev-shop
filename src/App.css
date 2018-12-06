@@ -2,8 +2,9 @@
   text-align: center;
 }
 
-.header: {
+.header {
     height: 50px;
+    color: #ffffff;
     background-color: #006db0;
     text-align: left;
 }
