@@ -30,3 +30,8 @@
     width: 45%;
     right: 0;
 }
+
+.productsContainer {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
