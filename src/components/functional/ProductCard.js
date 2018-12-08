@@ -16,6 +16,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const imgStyle = { height: '200px', width: '90%', margin: '0 auto' };
+const listItemStyle = { paddingTop: '0px', paddingBottom: '0px' };
 
 const ProductCard = ({ product }) => (
     <div>
@@ -34,19 +35,19 @@ const ProductCard = ({ product }) => (
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point1} />
+                            <ListItemText primary={product.point1} style={listItemStyle} />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point2} />
+                            <ListItemText primary={product.point2} style={listItemStyle} />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point3} />
+                            <ListItemText primary={product.point3} style={listItemStyle} />
                         </ListItem>
                     </List>
                 </CardContent>

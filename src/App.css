@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.buttonBar {
+    height: 50px;
+}
+
 .header {
     height: 40px;
     text-align: left;

@@ -21,7 +21,7 @@ class App extends Component {
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    <Toolbar>
+                    <Toolbar className="buttonBar">
                         {SHOPNAME}
                         <Button size="small" color="inherit">
                             eCommerce mvp
@@ -31,6 +31,9 @@ class App extends Component {
                         </Button>
                         <Button size="small" color="inherit">
                             data table mvp
+                        </Button>
+                        <Button size="small" color="inherit">
+                            request your mvp
                         </Button>
                     </Toolbar>
                 </AppBar>
