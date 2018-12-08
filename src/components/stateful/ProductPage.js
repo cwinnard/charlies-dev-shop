@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react';
 
-import InquiryLink from '../functional/InquiryLink';
+import InquiryLink from './InquiryLink';
 import ProductCard from '../functional/ProductCard';
 
 class ProductPage extends Component {
