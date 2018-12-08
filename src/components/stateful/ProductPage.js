@@ -1,6 +1,7 @@
 /* eslint react/jsx-one-expression-per-line: 0 */
 /* eslint react/prefer-stateless-function: 0 */
 
+import { Grid } from '@material-ui/core';
 import React, { Component } from 'react';
 
 import InquiryLink from './InquiryLink';
@@ -21,10 +22,20 @@ class ProductPage extends Component {
     render() {
         return (
             <div>
-                <ProductCard product={product} />
-                <ProductCard product={product} />
-                <ProductCard product={product} />
-                <InquiryLink />
+                <Grid container spacing={24}>
+                    <Grid item sm={4} xs={12}>
+                        <ProductCard product={product} />
+                    </Grid>
+                    <Grid item sm={4} xs={12}>
+                        <ProductCard product={product} />
+                    </Grid>
+                    <Grid item sm={4} xs={12}>
+                        <ProductCard product={product} />
+                    </Grid>
+                    <Grid item sm={12} xs={12}>
+                        <InquiryLink />
+                    </Grid>
+                </Grid>
             </div>
         );
     }
