@@ -9,7 +9,7 @@ import InquiryThankYou from '../functional/InquiryThankYou';
 class InquiryPage extends Component {
     state = {
         submitted: false,
-    };
+    }
 
     handleSubmit = () => {
         this.setState({ submitted: true });

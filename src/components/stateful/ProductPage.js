@@ -4,7 +4,6 @@
 import { Grid } from '@material-ui/core';
 import React, { Component } from 'react';
 
-import InquiryLink from './InquiryLink';
 import ProductCard from '../functional/ProductCard';
 import tennisImg from '../../images/tennis.jpg';
 import benchImg from '../../images/bench.jpg';
@@ -20,7 +19,7 @@ const product1 = {
 const product2 = {
     title: 'Homemade Bench',
     img: benchImg,
-    point1: 'Made of petrified wood',
+    point1: 'Petrified wood',
     point2: 'Very sturdy',
     point3: '10 year return policy',
 };
@@ -45,9 +44,6 @@ class ProductPage extends Component {
                     </Grid>
                     <Grid item sm={4} xs={12}>
                         <ProductCard product={product3} />
-                    </Grid>
-                    <Grid item sm={12} xs={12}>
-                        <InquiryLink />
                     </Grid>
                 </Grid>
             </div>
