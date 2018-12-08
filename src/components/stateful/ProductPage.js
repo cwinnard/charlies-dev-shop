@@ -7,15 +7,26 @@ import React, { Component } from 'react';
 import InquiryLink from './InquiryLink';
 import ProductCard from '../functional/ProductCard';
 
-import img from '../../images/tennis.jpg';
-
-const title = 'Tennis Lessons';
-const product = {
-    img,
-    title,
+const product1 = {
+    title: 'Tennis Lessons',
+    img: '../../images/tennis.jpg',
     point1: 'Experienced: Played when the game was invented',
-    point2: 'Experienced: Played when the game was invented',
-    point3: 'Experienced: Played when the game was invented',
+    point2: 'Ambidextrous: So you\'ll get the right (or left) instruction',
+    point3: 'Expensive: So you know it\'s good',
+};
+const product2 = {
+    title: 'Homemade Bench',
+    img: '../../images/bench.jpg',
+    point1: 'Handmade: By my grandfather',
+    point2: 'Good Wood: From the forest',
+    point3: 'Scenery: Not Included',
+};
+const product3 = {
+    title: 'Tasty Pasta',
+    img: '../../images/pasta.jpg',
+    point1: 'Noodles: The best part of the dish',
+    point2: 'Sauce: For the flavor',
+    point3: 'Plate: To keep you clean',
 };
 
 class ProductPage extends Component {
@@ -24,13 +35,13 @@ class ProductPage extends Component {
             <div>
                 <Grid container spacing={24}>
                     <Grid item sm={4} xs={12}>
-                        <ProductCard product={product} />
+                        <ProductCard product={product1} />
                     </Grid>
                     <Grid item sm={4} xs={12}>
-                        <ProductCard product={product} />
+                        <ProductCard product={product2} />
                     </Grid>
                     <Grid item sm={4} xs={12}>
-                        <ProductCard product={product} />
+                        <ProductCard product={product3} />
                     </Grid>
                     <Grid item sm={12} xs={12}>
                         <InquiryLink />
