@@ -12,6 +12,10 @@
     text-align: left;
 }
 
+.pointsList {
+    padding: 0;
+}
+
 .card {
     height: 65vh;
 }

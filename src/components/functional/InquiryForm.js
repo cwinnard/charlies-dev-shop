@@ -12,7 +12,7 @@ import React from 'react';
 
 const NEW_INQUIRY_URL = 'https://charlie-system.herokuapp.com/inquiry/new';
 
-const formData = {
+let formData = {
     username: '',
     email: '',
     businessType: '',
@@ -40,9 +40,20 @@ const setRequest = (e) => {
     formData.request = e.target.value;
 };
 
+const resetFormData = () => {
+    formData = {
+        username: '',
+        email: '',
+        businessType: '',
+        businessDescription: '',
+        request: '',
+    };
+    return formData;
+};
+
 const postForm = () => {
-    axios.post(NEW_INQUIRY_URL, formData).then((res) => {
-        console.log(res);
+    axios.post(NEW_INQUIRY_URL, formData).then(() => {
+        resetFormData();
     }, (e) => {
         console.log(e);
     });

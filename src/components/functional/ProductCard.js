@@ -17,6 +17,7 @@ import PropTypes from 'prop-types';
 
 const imgStyle = { height: '200px', width: '90%', margin: '0 auto' };
 const listItemStyle = { paddingTop: '0px', paddingBottom: '0px' };
+const listItemTextStyle = { fontSize: '0.8rem' };
 
 const ProductCard = ({ product }) => (
     <div>
@@ -29,25 +30,25 @@ const ProductCard = ({ product }) => (
                     image={product.img}
                     style={imgStyle}
                 />
-                <CardContent>
+                <CardContent className="pointsList">
                     <List>
                         <ListItem style={listItemStyle}>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point1} />
+                            <ListItemText primary={product.point1} style={listItemTextStyle} />
                         </ListItem>
-                        <ListItem>
+                        <ListItem style={listItemStyle}>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point2} />
+                            <ListItemText primary={product.point2} style={listItemTextStyle} />
                         </ListItem>
-                        <ListItem>
+                        <ListItem style={listItemStyle}>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point3} />
+                            <ListItemText primary={product.point3} style={listItemTextStyle} />
                         </ListItem>
                     </List>
                 </CardContent>
