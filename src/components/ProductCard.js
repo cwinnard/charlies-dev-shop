@@ -5,6 +5,7 @@ import {
     CardMedia,
 } from '@material-ui/core';
 import React from 'react';
+import InquiryLink from './InquiryLink';
 import img from '../images/tennis.jpg';
 
 const ProductCard = () => (
@@ -20,6 +21,7 @@ const ProductCard = () => (
                 Tennis Lessons!
             </CardContent>
         </Card>
+        <InquiryLink />
     </div>
 );
 
