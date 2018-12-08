@@ -11,6 +11,8 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import DataTablePage from './components/stateful/DataTablePage';
+import EmailSignupPage from './components/stateful/EmailSignupPage';
 import InquiryPage from './components/stateful/InquiryPage';
 import ProductPage from './components/stateful/ProductPage';
 
@@ -44,6 +46,8 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={ProductPage} />
                     <Route exact path="/inquiry" component={InquiryPage} />
+                    <Route exact path="/email" component={EmailSignupPage} />
+                    <Route exact path="/data" component={DataTablePage} />
                 </Switch>
             </div>
         );
