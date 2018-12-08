@@ -11,6 +11,10 @@
     margin: 10px auto;
 }
 
+.productsContainer {
+    width: 80%;
+}
+
 .formCard {
     width: 70%;
 }

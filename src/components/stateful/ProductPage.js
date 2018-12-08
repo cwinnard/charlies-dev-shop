@@ -36,7 +36,7 @@ class ProductPage extends Component {
     render() {
         return (
             <div>
-                <Grid container spacing={24}>
+                <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
                         <ProductCard product={product1} />
                     </Grid>
