@@ -49,7 +49,7 @@ const postForm = () => {
 };
 
 const InquiryForm = () => (
-    <Card className="card">
+    <Card className="formCard">
         <div className="formHeader" />
         <CardContent>
             <form>

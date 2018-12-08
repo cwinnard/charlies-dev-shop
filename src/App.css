@@ -11,6 +11,10 @@
     margin: 10px auto;
 }
 
+.formCard {
+    width: 70%;
+}
+
 .formHeader {
     background-color: #d52941;
     height: 35px;
