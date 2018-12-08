@@ -57,7 +57,7 @@ const postForm = () => {
         resetFormData();
         formData.submitted = true;
         const form = document.getElementById('inqForm')[0];
-        form.reset();
+        console.log(form);
     }, (e) => {
         console.log(e);
     });

@@ -15,20 +15,20 @@ const product1 = {
     img: tennisImg,
     point1: '$30 an hour',
     point2: 'B.Y.O.Balls',
-    point3: 'Prince raquets only',
+    point3: 'Head raquets only',
 };
 const product2 = {
     title: 'Homemade Bench',
     img: benchImg,
     point1: 'Made of petrified wood',
     point2: 'Very sturdy',
-    point3: '10 year/100,000 sits return policy',
+    point3: '10 year return policy',
 };
 const product3 = {
     title: 'Tasty Pasta',
     img: pastaImg,
     point1: 'Non-gluten-free',
-    point2: 'Available for a limited time',
+    point2: 'Limited time only',
     point3: '3 sauce varieties!',
 };
 

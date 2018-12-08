@@ -16,7 +16,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const headerStyle = { fontSize: '1.1em' };
-const imgStyle = { height: '200px', width: '90%', margin: '0 auto' };
+const imgStyle = { height: '140px', width: '90%', margin: '0 auto' };
 const listAreaStyle = { paddingTop: '0', paddingBottom: '0' };
 const listItemStyle = { paddingTop: '0px', paddingBottom: '0px' };
 const listItemTextStyle = { fontSize: '0.8rem', padding: '0' };
