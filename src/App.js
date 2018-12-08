@@ -4,7 +4,7 @@
 import { AppBar } from '@material-ui/core';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import InquiryForm from './components/InquiryForm';
@@ -22,6 +22,11 @@ class App extends Component {
                     <Route exact path="/" component={ProductCard} />
                     <Route path="/inquiry" component={InquiryForm} />
                 </Switch>
+                <h5>
+                    <Link to="/inquiry">
+                        Like what you see?  Request an MVP
+                    </Link>
+                </h5>
             </div>
         );
     }
