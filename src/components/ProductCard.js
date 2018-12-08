@@ -9,9 +9,9 @@ import React from 'react';
 const ProductCard = () => (
     <div>
         <Card className="card">
-            <CardHeader>
-                Product Title
-            </CardHeader>
+            <CardHeader
+                title="Product Title"
+            />
             <CardContent>
                 Hello Product1
             </CardContent>
