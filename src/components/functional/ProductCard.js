@@ -31,23 +31,23 @@ const ProductCard = ({ product }) => (
                 />
                 <CardContent>
                     <List>
-                        <ListItem>
+                        <ListItem style={listItemStyle}>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point1} style={listItemStyle} />
+                            <ListItemText primary={product.point1} />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point2} style={listItemStyle} />
+                            <ListItemText primary={product.point2} />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
-                            <ListItemText primary={product.point3} style={listItemStyle} />
+                            <ListItemText primary={product.point3} />
                         </ListItem>
                     </List>
                 </CardContent>
