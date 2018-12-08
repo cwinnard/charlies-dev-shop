@@ -32,11 +32,11 @@ const ProductCard = ({ product }) => (
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small">
+                <Button size="small" color="primary">
                     Learn More
                 </Button>
-                <Button size="small">
-                    Buy know
+                <Button size="small" color="primary">
+                    Buy Now
                 </Button>
             </CardActions>
         </Card>

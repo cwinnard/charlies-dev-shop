@@ -37,13 +37,13 @@ class ProductPage extends Component {
         return (
             <div>
                 <Grid container className="productsContainer" spacing={24}>
-                    <Grid item sm={3} xs={12}>
+                    <Grid item sm={4} xs={12}>
                         <ProductCard product={product1} />
                     </Grid>
-                    <Grid item sm={3} xs={12}>
+                    <Grid item sm={4} xs={12}>
                         <ProductCard product={product2} />
                     </Grid>
-                    <Grid item sm={3} xs={12}>
+                    <Grid item sm={4} xs={12}>
                         <ProductCard product={product3} />
                     </Grid>
                     <Grid item sm={12} xs={12}>
