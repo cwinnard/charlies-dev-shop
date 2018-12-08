@@ -18,7 +18,6 @@ class InquiryPage extends Component {
     render() {
         const { submitted } = this.state;
         const { handleSubmit } = this;
-        console.log(handleSubmit);
         return (
             <div>
                 {!submitted

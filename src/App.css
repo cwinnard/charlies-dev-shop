@@ -3,13 +3,24 @@
 }
 
 .shopName {
-    width: 15%;
+    width: 20%;
     font-style: italic;
 }
 
 .navButtons {
     width: 80%;
-    align-items: right;
+    text-align: right;
+}
+
+@media only screen (max-width: 600px) {
+    .shopName {
+        display: none;
+    }
+
+    .navButtons {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .buttonBar {
