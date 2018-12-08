@@ -4,7 +4,7 @@
 import {
     AppBar,
     Button,
-    Toolbar
+    Toolbar,
 } from '@material-ui/core';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
