@@ -13,23 +13,23 @@ import pastaImg from '../../images/pasta.jpg';
 const product1 = {
     title: 'Tennis Lessons',
     img: tennisImg,
-    point1: 'Experienced: Played when the game was invented',
-    point2: 'Ambidextrous: So you\'ll get the right (or left) instruction',
-    point3: 'Expensive: So you know it\'s good',
+    point1: '$30 an hour',
+    point2: 'B.Y.O.Balls',
+    point3: 'Prince raquets only',
 };
 const product2 = {
     title: 'Homemade Bench',
     img: benchImg,
-    point1: 'Handmade: By my grandfather',
-    point2: 'Good Wood: From the forest',
-    point3: 'Scenery: Not Included',
+    point1: 'Made of petrified wood',
+    point2: 'Very sturdy',
+    point3: '10 year/100,000 sits return policy',
 };
 const product3 = {
     title: 'Tasty Pasta',
     img: pastaImg,
-    point1: 'Noodles: The best part of the dish',
-    point2: 'Sauce: For the flavor',
-    point3: 'Plate: To keep you clean',
+    point1: 'Non-gluten-free',
+    point2: 'Available for a limited time',
+    point3: '3 sauce varieties!',
 };
 
 class ProductPage extends Component {
