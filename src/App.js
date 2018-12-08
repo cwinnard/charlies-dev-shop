@@ -4,6 +4,7 @@
 import {
     AppBar,
     Button,
+    Grid,
     Toolbar,
 } from '@material-ui/core';
 import React, { Component } from 'react';
@@ -22,23 +23,29 @@ class App extends Component {
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar className="buttonBar">
-                        <div className="shopName">
-                            {SHOPNAME}
-                        </div>
-                        <div className="navButtons">
-                            <Button size="small" color="inherit">
-                                eCommerce mvp
-                            </Button>
-                            <Button size="small" color="inherit">
-                                email signup mvp
-                            </Button>
-                            <Button size="small" color="inherit">
-                                data table mvp
-                            </Button>
-                            <Button size="small" color="inherit">
-                                request your mvp
-                            </Button>
-                        </div>
+                        <Grid container spacing={24}>
+                            <Grid item sm={3} xs={2}>
+                                <div className="shopName">
+                                    {SHOPNAME}
+                                </div>
+                            </Grid>
+                        </Grid>
+                        <Grid container spacing={24}>
+                            <Grid item sm={8} xs={10}>
+                                <Button size="small" color="inherit">
+                                    eCommerce mvp
+                                </Button>
+                                <Button size="small" color="inherit">
+                                    email signup mvp
+                                </Button>
+                                <Button size="small" color="inherit">
+                                    data table mvp
+                                </Button>
+                                <Button size="small" color="inherit">
+                                    request your mvp
+                                </Button>
+                            </Grid>
+                        </Grid>
                     </Toolbar>
                 </AppBar>
                 <Switch>
