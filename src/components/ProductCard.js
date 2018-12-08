@@ -5,7 +5,7 @@ import {
     CardMedia,
 } from '@material-ui/core';
 import React from 'react';
-import img from '../../public/tennis.jpg';
+import img from '../images/tennis.jpg';
 
 const ProductCard = () => (
     <div>
