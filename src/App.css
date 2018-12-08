@@ -3,11 +3,13 @@
 }
 
 .shopName {
+    width: 15%;
     font-style: italic;
 }
 
 .navButtons {
-    align-items: center;
+    width: 80%;
+    align-items: right;
 }
 
 .buttonBar {

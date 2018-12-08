@@ -128,7 +128,7 @@ const InquiryForm = ({ action }) => (
                     color="primary"
                     variant="contained"
                     size="large"
-                    onClick={postForm(action)}
+                    onClick={() => { postForm(action); }}
                 >
                     Submit
                 </Button>
