@@ -22,7 +22,7 @@
         text-align: center;
     }
 
-    .card {
+    .formCard {
         max-height: 100vh;
     }
 }
@@ -48,12 +48,12 @@
 }
 
 .card {
-    max-height: 56vh;
+    height: 56vh;
 }
 
 .formCard {
     width: 70%;
-    height: 67vh;
+    max-height: 67vh;
     margin: 13vh auto;
 }
 
