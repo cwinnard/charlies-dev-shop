@@ -29,16 +29,16 @@ class App extends Component {
                         </div>
                         <div className="navButtons">
                             <Button size="small" color="inherit">
-                                eCommerce mvp
+                                eCommerce
                             </Button>
                             <Button size="small" color="inherit">
-                                email signup mvp
+                                email signup
                             </Button>
                             <Button size="small" color="inherit">
-                                data table mvp
+                                data table
                             </Button>
                             <Button size="small" color="inherit">
-                                request your mvp
+                                request yours
                             </Button>
                         </div>
                     </Toolbar>
