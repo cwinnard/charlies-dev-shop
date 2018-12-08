@@ -22,19 +22,23 @@ class App extends Component {
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar className="buttonBar">
-                        {SHOPNAME}
-                        <Button size="small" color="inherit">
-                            eCommerce mvp
-                        </Button>
-                        <Button size="small" color="inherit">
-                            email signup mvp
-                        </Button>
-                        <Button size="small" color="inherit">
-                            data table mvp
-                        </Button>
-                        <Button size="small" color="inherit">
-                            request your mvp
-                        </Button>
+                        <div className="shopName">
+                            {SHOPNAME}
+                        </div>
+                        <div className="navButtons">
+                            <Button size="small" color="inherit">
+                                eCommerce mvp
+                            </Button>
+                            <Button size="small" color="inherit">
+                                email signup mvp
+                            </Button>
+                            <Button size="small" color="inherit">
+                                data table mvp
+                            </Button>
+                            <Button size="small" color="inherit">
+                                request your mvp
+                            </Button>
+                        </div>
                     </Toolbar>
                 </AppBar>
                 <Switch>

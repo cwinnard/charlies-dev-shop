@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.shopName {
+    font-style: italic;
+}
+
+.navButtons {
+    align-items: center;
+}
+
 .buttonBar {
     height: 40px;
     min-height: 40px !important;
