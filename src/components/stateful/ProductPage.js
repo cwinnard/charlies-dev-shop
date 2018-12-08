@@ -33,10 +33,6 @@ const product3 = {
 };
 
 class ProductPage extends Component {
-    state = {
-        submitted: false,
-    };
-
     render() {
         return (
             <div>
