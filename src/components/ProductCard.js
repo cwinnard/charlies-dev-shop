@@ -6,7 +6,7 @@ import {
 import React from 'react';
 
 
-const ProductsCard = () => (
+const ProductCard = () => (
     <div>
         <Card className="card">
             <CardHeader>
@@ -19,4 +19,4 @@ const ProductsCard = () => (
     </div>
 );
 
-export default ProductsCard;
+export default ProductCard;
