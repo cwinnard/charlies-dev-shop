@@ -20,9 +20,11 @@ const ProductCard = ({ product }) => (
                 style={imgStyle}
             />
             <CardContent>
-                Experienced: 30 years of forehand experience
-                Ambidextrious: Learn the right hand or left
-                Expensive: So you know you gettin hot shit
+                {product.point1}
+                <br />
+                {product.point2}
+                <br />
+                {product.point3}
             </CardContent>
         </Card>
     </div>
@@ -32,6 +34,9 @@ ProductCard.propTypes = {
     product: PropTypes.shape({
         title: PropTypes.string.isRequired,
         img: PropTypes.string.isRequired,
+        point1: PropTypes.string,
+        point2: PropTypes.string,
+        point3: PropTypes.string,
     }).isRequired,
 };
 
