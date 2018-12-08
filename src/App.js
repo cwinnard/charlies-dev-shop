@@ -1,13 +1,7 @@
 /* eslint react/jsx-one-expression-per-line: 0 */
 /* eslint react/prefer-stateless-function: 0 */
 
-import {
-    AppBar,
-    IconButton,
-    Menu,
-    MenuItem,
-    Toolbar,
-} from '@material-ui/core';
+import { AppBar } from '@material-ui/core';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
@@ -22,16 +16,7 @@ class App extends Component {
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    <Toolbar>
-                        <IconButton>
-                            CLICK
-                        </IconButton>
-                        <Menu>
-                            <MenuItem>
-                                Here be menu MenuItem
-                            </MenuItem>
-                        </Menu>
-                    </Toolbar>
+                    Title
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={ProductCard} />
