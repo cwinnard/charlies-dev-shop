@@ -56,10 +56,7 @@ const resetFormData = () => {
 const postForm = (action) => {
     axios.post(NEW_INQUIRY_URL, formData).then(() => {
         resetFormData();
-        formData.submitted = true;
-        const form = document.getElementById('inqForm')[0];
         action();
-        console.log(form);
     }, (e) => {
         console.log(e);
     });
