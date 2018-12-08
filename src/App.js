@@ -18,19 +18,18 @@ const SHOPNAME = 'Charlie\'s Dev Shop';
 
 class App extends Component {
     render() {
-        // const name = 'charlie\'s dev shop';
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar>
                         {SHOPNAME}
-                        <Button color="inherit">
+                        <Button size="small" color="inherit">
                             eCommerce mvp
                         </Button>
-                        <Button color="inherit">
+                        <Button size="small" color="inherit">
                             email signup mvp
                         </Button>
-                        <Button color="inherit">
+                        <Button size="small" color="inherit">
                             data table mvp
                         </Button>
                     </Toolbar>

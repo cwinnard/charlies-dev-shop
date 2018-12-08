@@ -36,14 +36,12 @@ const ProductCard = ({ product }) => (
                             </ListItemIcon>
                             <ListItemText primary={product.point1} />
                         </ListItem>
-                        <br />
                         <ListItem>
                             <ListItemIcon>
                                 <Check />
                             </ListItemIcon>
                             <ListItemText primary={product.point2} />
                         </ListItem>
-                        <br />
                         <ListItem>
                             <ListItemIcon>
                                 <Check />

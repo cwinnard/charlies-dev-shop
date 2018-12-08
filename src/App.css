@@ -3,7 +3,7 @@
 }
 
 .header {
-    height: 30px;
+    height: 40px;
     text-align: left;
 }
 
@@ -33,9 +33,5 @@
 
 .productsContainer {
     width: 100% !important;
-    margin: 20 auto !important;
-}
-
-.productMain {
-    height:
+    margin: 30vh auto !important;
 }
