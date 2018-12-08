@@ -18,6 +18,7 @@ let formData = {
     businessType: '',
     businessDescription: '',
     request: '',
+    submitted: false,
 };
 
 const setUsername = (e) => {
@@ -54,6 +55,7 @@ const resetFormData = () => {
 const postForm = () => {
     axios.post(NEW_INQUIRY_URL, formData).then(() => {
         resetFormData();
+        formData.submitted = true;
     }, (e) => {
         console.log(e);
     });
