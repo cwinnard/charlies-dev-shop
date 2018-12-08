@@ -10,13 +10,15 @@ import './App.css';
 import InquiryPage from './components/stateful/InquiryPage';
 import ProductPage from './components/stateful/ProductPage';
 
+const SHOPNAME = 'Charlie\'s Dev Shop';
+
 class App extends Component {
     render() {
         // const name = 'charlie\'s dev shop';
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    Title
+                    {SHOPNAME}
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={ProductPage} />
