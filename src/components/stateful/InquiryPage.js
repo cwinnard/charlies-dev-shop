@@ -9,7 +9,6 @@ class InquiryPage extends Component {
     render() {
         return (
             <div>
-                hello thing
                 <InquiryForm />
             </div>
         );

@@ -6,12 +6,19 @@ import React, { Component } from 'react';
 import InquiryLink from './InquiryLink';
 import ProductCard from '../functional/ProductCard';
 
+import img from '../../images/tennis.jpg';
+
+const title = 'Tennis Lessons';
+const product = {
+    img,
+    title,
+};
+
 class ProductPage extends Component {
     render() {
         return (
             <div>
-                hello thin2
-                <ProductCard />
+                <ProductCard product={product} />
                 <InquiryLink />
             </div>
         );

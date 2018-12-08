@@ -22,7 +22,7 @@ class App extends Component {
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={ProductPage} />
-                    <Route path="/inquiry" component={InquiryPage} />
+                    <Route exact path="/inquiry" component={InquiryPage} />
                 </Switch>
             </div>
         );
