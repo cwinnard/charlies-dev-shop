@@ -8,7 +8,7 @@ import React from 'react';
 import InquiryLink from './InquiryLink';
 import img from '../images/tennis.jpg';
 
-const imgStyle = { height: '200px', width: '80%', margin: '0 auto' };
+const imgStyle = { height: '200px', width: '90%', margin: '0 auto' };
 
 const ProductCard = () => (
     <div>

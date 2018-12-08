@@ -7,8 +7,8 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import InquiryForm from './components/InquiryForm';
-import ProductCard from './components/ProductCard';
+import InquiryPage from './components/stateful/InquiryPage';
+import ProductPage from './components/stateful/ProductPage';
 
 class App extends Component {
     render() {
@@ -19,8 +19,8 @@ class App extends Component {
                     Title
                 </AppBar>
                 <Switch>
-                    <Route exact path="/" component={ProductCard} />
-                    <Route path="/inquiry" component={InquiryForm} />
+                    <Route exact path="/" component={ProductPage} />
+                    <Route path="/inquiry" component={InquiryPage} />
                 </Switch>
             </div>
         );
