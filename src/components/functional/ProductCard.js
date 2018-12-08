@@ -6,7 +6,12 @@ import {
     CardContent,
     CardHeader,
     CardMedia,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
 } from '@material-ui/core';
+import Check from '@material-ui/icons';
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -15,7 +20,7 @@ const imgStyle = { height: '200px', width: '90%', margin: '0 auto' };
 const ProductCard = ({ product }) => (
     <div>
         <Card className="card">
-            <CardActionArea>
+            <CardActionArea className="productMain">
                 <CardHeader
                     title={product.title}
                 />
@@ -24,11 +29,28 @@ const ProductCard = ({ product }) => (
                     style={imgStyle}
                 />
                 <CardContent>
-                    {product.point1}
-                    <br />
-                    {product.point2}
-                    <br />
-                    {product.point3}
+                    <List>
+                        <ListItem>
+                            <ListItemIcon>
+                                <Check />
+                            </ListItemIcon>
+                            <ListItemText primary={product.point1} />
+                        </ListItem>
+                        <br />
+                        <ListItem>
+                            <ListItemIcon>
+                                <Check />
+                            </ListItemIcon>
+                            <ListItemText primary={product.point2} />
+                        </ListItem>
+                        <br />
+                        <ListItem>
+                            <ListItemIcon>
+                                <Check />
+                            </ListItemIcon>
+                            <ListItemText primary={product.point3} />
+                        </ListItem>
+                    </List>
                 </CardContent>
             </CardActionArea>
             <CardActions>
