@@ -56,6 +56,8 @@ const postForm = () => {
     axios.post(NEW_INQUIRY_URL, formData).then(() => {
         resetFormData();
         formData.submitted = true;
+        const form = document.getElementById('inqForm')[0];
+        form.reset();
     }, (e) => {
         console.log(e);
     });
@@ -65,7 +67,7 @@ const InquiryForm = () => (
     <Card className="formCard">
         <div className="formHeader" />
         <CardContent>
-            <form>
+            <form id="inqForm">
                 <h3>
                     Request an MVP
                 </h3>
