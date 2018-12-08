@@ -14,7 +14,7 @@ const ProductCard = () => (
                 title="Product Title"
             />
             <CardMedia
-                image="/public/tennis.jpg"
+                image="../../public/tennis.jpg"
             />
             <CardContent>
                 Tennis Lessons!
