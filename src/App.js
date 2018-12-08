@@ -14,7 +14,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import InquiryForm from './components/InquiryForm';
-import ProductsCard from './components/ProductsCard';
+import ProductCard from './components/ProductCard';
 
 class App extends Component {
     render() {
@@ -34,7 +34,7 @@ class App extends Component {
                     </Toolbar>
                 </AppBar>
                 <Switch>
-                    <Route exact path="/" component={ProductsCard} />
+                    <Route exact path="/" component={ProductCard} />
                     <Route path="/inquiry" component={InquiryForm} />
                 </Switch>
             </div>

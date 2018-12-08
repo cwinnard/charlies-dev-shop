@@ -1,6 +1,7 @@
 import {
     Card,
     CardContent,
+    CardHeader,
 } from '@material-ui/core';
 import React from 'react';
 
@@ -8,18 +9,11 @@ import React from 'react';
 const ProductsCard = () => (
     <div>
         <Card className="card">
+            <CardHeader>
+                Product Title
+            </CardHeader>
             <CardContent>
                 Hello Product1
-            </CardContent>
-        </Card>
-        <Card className="card">
-            <CardContent>
-                Hello Product2
-            </CardContent>
-        </Card>
-        <Card className="card">
-            <CardContent>
-                Hello Product3
             </CardContent>
         </Card>
     </div>
