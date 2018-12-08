@@ -8,6 +8,7 @@ import {
     TextField,
 } from '@material-ui/core';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 const NEW_INQUIRY_URL = 'https://charlie-system.herokuapp.com/inquiry/new';
@@ -52,18 +53,19 @@ const resetFormData = () => {
     return formData;
 };
 
-const postForm = () => {
+const postForm = (action) => {
     axios.post(NEW_INQUIRY_URL, formData).then(() => {
         resetFormData();
         formData.submitted = true;
         const form = document.getElementById('inqForm')[0];
+        action();
         console.log(form);
     }, (e) => {
         console.log(e);
     });
 };
 
-const InquiryForm = () => (
+const InquiryForm = ({ action }) => (
     <Card className="formCard">
         <div className="formHeader" />
         <CardContent>
@@ -126,7 +128,7 @@ const InquiryForm = () => (
                     color="primary"
                     variant="contained"
                     size="large"
-                    onClick={postForm}
+                    onClick={postForm(action)}
                 >
                     Submit
                 </Button>
@@ -134,5 +136,9 @@ const InquiryForm = () => (
         </CardContent>
     </Card>
 );
+
+InquiryForm.propTypes = {
+    action: PropTypes.func.isRequired,
+};
 
 export default InquiryForm;
