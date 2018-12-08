@@ -21,6 +21,16 @@
         width: 100%;
         text-align: center;
     }
+
+    .card {
+        max-height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navButtons {
+        font-size: .6 rem;
+    }
 }
 
 .buttonBar {
@@ -38,7 +48,7 @@
 }
 
 .card {
-    height: 56vh;
+    max-height: 56vh;
 }
 
 .formCard {
