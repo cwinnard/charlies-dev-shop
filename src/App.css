@@ -25,7 +25,7 @@
 }
 
 .card {
-    height: 50vh;
+    height: 56vh;
 }
 
 .formCard {
@@ -51,5 +51,5 @@
 
 .productsContainer {
     width: 100% !important;
-    margin: 15vh auto !important;
+    margin: 10vh auto !important;
 }
