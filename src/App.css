@@ -12,7 +12,7 @@
     text-align: right;
 }
 
-@media only screen (max-width: 600px) {
+@media only and screen (max-width: 600px) {
     .shopName {
         display: none;
     }
@@ -43,6 +43,7 @@
 
 .formCard {
     width: 70%;
+    height: 67vh;
     margin: 13vh auto;
 }
 
