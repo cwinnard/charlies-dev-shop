@@ -7,7 +7,12 @@ class EmailSignupPage extends Component {
     render() {
         return (
             <div>
-                Hello Email Signup Page
+                <div className="heroBanner">
+                    <img className="heroImg" src="" alt="hero banner" />
+                </div>
+                <div>
+                    Hello Email Signup Page
+                </div>
             </div>
         );
     }
