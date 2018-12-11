@@ -28,10 +28,10 @@ class App extends Component {
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <div className="menu">
-                        <MenuIcon onClick={toggleMenu(false)} />
+                        <MenuIcon onClick={() => { toggleMenu(true); }} />
                         <Menu
                             open={menuOpen}
-                            onClose={toggleMenu(true)}
+                            onClose={() => { toggleMenu(false); }}
                         />
                     </div>
                     <div className="shopName">
