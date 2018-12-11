@@ -23,6 +23,7 @@ class App extends Component {
     }
 
     render() {
+        console.log(this.state);
         const { menuOpen, toggleMenu } = this.state;
         return (
             <div className="App">
