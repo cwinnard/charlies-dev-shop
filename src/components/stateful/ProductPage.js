@@ -4,6 +4,9 @@
 import { Grid } from '@material-ui/core';
 import React, { Component } from 'react';
 
+import HeroBanner from '../functional/HeroBanner';
+import heroImg from '../../images/hero.png';
+
 import ProductCard from '../functional/ProductCard';
 import tennisImg from '../../images/tennis.jpg';
 import benchImg from '../../images/bench.jpg';
@@ -35,6 +38,7 @@ class ProductPage extends Component {
     render() {
         return (
             <div>
+                <HeroBanner image={heroImg} alt="computer closeup" />
                 <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
                         <ProductCard product={product1} />
