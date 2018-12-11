@@ -1,7 +1,7 @@
 /* eslint react/jsx-one-expression-per-line: 0 */
 /* eslint react/prefer-stateless-function: 0 */
 
-import { AppBar, Toolbar } from '@material-ui/core';
+import { AppBar } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -19,7 +19,7 @@ const SHOPNAME = 'Charlie\'s Dev Shop';
 class App extends Component {
     state = {
         menuOpen: false,
-        toggleMenu: () => this.setState({ menuOpen: !this.menuOpen }),
+        toggleMenu: display => this.setState({ menuOpen: display }),
     }
 
     render() {
@@ -27,18 +27,16 @@ class App extends Component {
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    <Toolbar className="menuBar">
-                        <div className="menu">
-                            <MenuIcon onClick={toggleMenu} />
-                            <Menu
-                                open={menuOpen}
-                                onClose={toggleMenu}
-                            />
-                        </div>
-                        <div className="shopName">
-                            {SHOPNAME}
-                        </div>
-                    </Toolbar>
+                    <div className="menu">
+                        <MenuIcon onClick={toggleMenu(false)} />
+                        <Menu
+                            open={menuOpen}
+                            onClose={toggleMenu(true)}
+                        />
+                    </div>
+                    <div className="shopName">
+                        {SHOPNAME}
+                    </div>
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={ProductPage} />
