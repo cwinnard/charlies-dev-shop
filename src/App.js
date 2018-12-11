@@ -14,6 +14,7 @@ import './App.css';
 import DataTablePage from './components/stateful/DataTablePage';
 import EmailSignupPage from './components/stateful/EmailSignupPage';
 import InquiryPage from './components/stateful/InquiryPage';
+import Menu from './components/stateful/Menu';
 import ProductPage from './components/stateful/ProductPage';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
@@ -24,22 +25,11 @@ class App extends Component {
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar className="buttonBar">
+                        <div className="menu">
+                            <Menu />
+                        </div>
                         <div className="shopName">
                             {SHOPNAME}
-                        </div>
-                        <div className="navButtons">
-                            <Button size="small" color="inherit">
-                                eCommerce
-                            </Button>
-                            <Button size="small" color="inherit">
-                                email signup
-                            </Button>
-                            <Button size="small" color="inherit">
-                                data table
-                            </Button>
-                            <Button size="small" color="inherit">
-                                request yours
-                            </Button>
                         </div>
                     </Toolbar>
                 </AppBar>

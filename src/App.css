@@ -2,40 +2,21 @@
   text-align: center;
 }
 
+.menu {
+    width: 20%;
+    text-align: left;
+}
+
 .shopName {
     width: 20%;
     font-style: italic;
-}
-
-.navButtons {
-    width: 80%;
     text-align: right;
 }
 
 @media only screen and (max-width: 750px) {
-    .shopName {
-        display: none;
-    }
-
-    .navButtons {
-        width: 100%;
-        text-align: center;
-    }
-
     .formCard {
         max-height: 100vh;
     }
-}
-
-@media only screen and (max-width: 450px) {
-    .navButtons {
-        font-size: .6em !important;
-    }
-}
-
-.buttonBar {
-    height: 40px;
-    min-height: 40px !important;
 }
 
 .header {
