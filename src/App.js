@@ -3,7 +3,6 @@
 
 import {
     AppBar,
-    Button,
     Toolbar,
 } from '@material-ui/core';
 import React, { Component } from 'react';
@@ -24,7 +23,7 @@ class App extends Component {
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    <Toolbar className="buttonBar">
+                    <Toolbar className="menuBar">
                         <div className="menu">
                             <Menu />
                         </div>

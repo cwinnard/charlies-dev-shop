@@ -3,22 +3,31 @@
 
 import { MenuItem, MenuList } from '@material-ui/core';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Menu extends Component {
     render() {
         return (
             <MenuList>
                 <MenuItem>
-                    eCommerce mvp
+                    <Link to="/ecommerce">
+                        eCommerce mvp
+                    </Link>
                 </MenuItem>
                 <MenuItem>
-                    email signup mvp
+                    <Link to="/email">
+                        email signup mvp
+                    </Link>
                 </MenuItem>
                 <MenuItem>
-                    data table mvp
+                    <Link to="/data">
+                        data table mvp
+                    </Link>
                 </MenuItem>
                 <MenuItem>
-                    request your mvp
+                    <Link to="/inquiry">
+                        request your mvp
+                    </Link>
                 </MenuItem>
             </MenuList>
         );
