@@ -13,19 +13,28 @@ import './App.css';
 import DataTablePage from './components/stateful/DataTablePage';
 import EmailSignupPage from './components/stateful/EmailSignupPage';
 import InquiryPage from './components/stateful/InquiryPage';
-import Menu from './components/stateful/Menu';
+import Menu from './components/functional/Menu';
 import ProductPage from './components/stateful/ProductPage';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
 
 class App extends Component {
+    state = {
+        menuOpen: false,
+        toggleMenu: () => this.setState({ menuOpen: !this.menuOpen }),
+    }
+
     render() {
+        const { menuOpen, toggleMenu } = this.state;
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
                     <Toolbar className="menuBar">
                         <div className="menu">
-                            <Menu />
+                            <Menu
+                                open={menuOpen}
+                                onClose={toggleMenu}
+                            />
                         </div>
                         <div className="shopName">
                             {SHOPNAME}
