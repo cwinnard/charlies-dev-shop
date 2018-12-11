@@ -2,7 +2,7 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import { AppBar, Toolbar } from '@material-ui/core';
-import { MenuIcon } from '@material-ui/icons/Menu';
+import MenuIcon from '@material-ui/icons/Menu';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
@@ -23,7 +23,6 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.state);
         const { menuOpen, toggleMenu } = this.state;
         return (
             <div className="App">
