@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroBanner = ({ image, alt }) => (
     <div className="heroBanner">
-        <img src={image} alt={alt} />
+        <img className="heroImg" src={image} alt={alt} />
     </div>
 );
 

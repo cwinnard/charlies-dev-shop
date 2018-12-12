@@ -27,15 +27,17 @@ class App extends Component {
         return (
             <div className="App">
                 <AppBar className="header" position="static" color="primary">
-                    <div className="menu">
-                        <MenuIcon onClick={() => { toggleMenu(true); }} />
-                        <Menu
-                            open={menuOpen}
-                            onClose={() => { toggleMenu(false); }}
-                        />
-                    </div>
-                    <div className="shopName">
-                        {SHOPNAME}
+                    <div className="menuContainer">
+                        <div className="menu">
+                            <MenuIcon onClick={() => { toggleMenu(true); }} />
+                            <Menu
+                                open={menuOpen}
+                                onClose={() => { toggleMenu(false); }}
+                            />
+                        </div>
+                        <div className="shopName">
+                            {SHOPNAME}
+                        </div>
                     </div>
                 </AppBar>
                 <Switch>
