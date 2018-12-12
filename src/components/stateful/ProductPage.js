@@ -40,6 +40,7 @@ const product3 = {
 class ProductPage extends Component {
     render() {
         const { menuOpen, toggleMenu } = this.props;
+        console.log(toggleMenu);
         return (
             <div>
                 <MenuBar menuOpen={menuOpen} onClose={toggleMenu} />
@@ -66,6 +67,7 @@ ProductPage.propTypes = {
 };
 
 const mapStateToProps = (state) => {
+    console.log(state);
     const { menuOpen, toggleMenu } = state;
     return {
         menuOpen,
