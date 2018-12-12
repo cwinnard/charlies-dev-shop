@@ -43,7 +43,7 @@ class ProductPage extends Component {
         console.log(toggleMenu);
         return (
             <div>
-                <MenuBar menuOpen={menuOpen} onClose={toggleMenu} />
+                <MenuBar menuOpen={menuOpen} toggleMenu={toggleMenu} />
                 <HeroBanner image={heroImg} alt="computer closeup" />
                 <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
