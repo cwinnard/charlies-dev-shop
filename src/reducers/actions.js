@@ -1,5 +1,5 @@
-const toggleMenu = {
-    type: 'TOGGLE_MENU',
-};
-
-export default toggleMenu;
+export default function toggleMenu() {
+    return {
+        type: 'TOGGLE_MENU',
+    };
+}
