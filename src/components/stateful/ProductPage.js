@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import toggleMenu from '../../reducers/actions';
+
 import MenuBar from '../functional/MenuBar';
 import HeroBanner from '../functional/HeroBanner';
 import heroImg from '../../images/hero.png';
@@ -39,11 +41,11 @@ const product3 = {
 
 class ProductPage extends Component {
     render() {
-        const { menuOpen, toggleMenu } = this.props;
-        console.log(toggleMenu);
+        const { menuVisable, toggleMenuAction } = this.props;
+        console.log(toggleMenuAction);
         return (
             <div>
-                <MenuBar menuOpen={menuOpen} toggleMenu={toggleMenu} />
+                <MenuBar menuVisable={menuVisable} toggleMenu={toggleMenuAction} />
                 <HeroBanner image={heroImg} alt="computer closeup" />
                 <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
@@ -62,17 +64,22 @@ class ProductPage extends Component {
 }
 
 ProductPage.propTypes = {
-    menuOpen: PropTypes.bool.isRequired,
-    toggleMenu: PropTypes.func.isRequired,
+    menuVisable: PropTypes.bool.isRequired,
+    toggleMenuAction: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
-    const { menuOpen, toggleMenu } = state;
+    const { menuVisable } = state;
     return {
-        menuOpen,
-        toggleMenu,
+        menuVisable,
     };
 };
 
-export default connect(mapStateToProps, null)(ProductPage);
+const mapDispatchToProps = (dispatch) => {
+    const toggleMenuAction = () => { dispatch(toggleMenu()); };
+    return {
+        toggleMenuAction,
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductPage);

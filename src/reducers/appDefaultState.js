@@ -1,10 +1,5 @@
-const toggleMenu = display => (
-    this.setState({ menuOpen: display })
-);
-
 const appDefaultState = {
-    menuOpen: false,
-    toggleMenu,
+    menuVisable: false,
 };
 
 export default appDefaultState;

@@ -5,14 +5,14 @@ import React from 'react';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
 
-const MenuBar = ({ menuOpen, toggleMenu }) => (
+const MenuBar = ({ menuVisable, toggleMenu }) => (
     <AppBar className="header" position="static" color="primary">
         <div className="menuContainer">
             <div className="menu">
-                <MenuIcon onClick={() => { toggleMenu(true); }} />
+                <MenuIcon onClick={toggleMenu} />
                 <Menu
-                    open={menuOpen}
-                    onClose={() => { toggleMenu(false); }}
+                    open={menuVisable}
+                    onClose={toggleMenu}
                 />
             </div>
             <div className="shopName">
@@ -23,7 +23,7 @@ const MenuBar = ({ menuOpen, toggleMenu }) => (
 );
 
 MenuBar.propTypes = {
-    menuOpen: PropTypes.bool.isRequired,
+    menuVisable: PropTypes.bool.isRequired,
     toggleMenu: PropTypes.func.isRequired,
 };
 

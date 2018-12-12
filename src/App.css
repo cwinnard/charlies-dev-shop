@@ -12,6 +12,7 @@
     width: 50%;
     height: 40px;
     text-align: left;
+    display: inline-block;
 }
 
 .shopName {
@@ -19,6 +20,7 @@
     height: 40px;
     font-style: italic;
     text-align: right;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 750px) {
@@ -32,6 +34,7 @@
 }
 
 .heroImg {
+    max-width: 950px;
     min-width: 600px;
     height: 40vh;
 }
