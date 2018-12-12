@@ -27,10 +27,4 @@ MenuBar.propTypes = {
     toggleMenu: PropTypes.func.isRequired,
 };
 
-// state = {
-//     menuOpen: false,
-//     toggleMenu: display => this.setState({ menuOpen: display }),
-// }
-
-
 export default MenuBar;

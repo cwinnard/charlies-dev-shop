@@ -41,11 +41,10 @@ const product3 = {
 
 class ProductPage extends Component {
     render() {
-        const { menuVisable, toggleMenuAction } = this.props;
-        console.log(toggleMenuAction);
+        const { menuVisable, toggle } = this.props;
         return (
             <div>
-                <MenuBar menuVisable={menuVisable} toggleMenu={toggleMenuAction} />
+                <MenuBar menuVisable={menuVisable} toggleMenu={toggle} />
                 <HeroBanner image={heroImg} alt="computer closeup" />
                 <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
@@ -65,7 +64,7 @@ class ProductPage extends Component {
 
 ProductPage.propTypes = {
     menuVisable: PropTypes.bool.isRequired,
-    toggleMenuAction: PropTypes.func.isRequired,
+    toggle: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => {
@@ -75,11 +74,10 @@ const mapStateToProps = (state) => {
     };
 };
 
-const mapDispatchToProps = (dispatch) => {
-    const toggleMenuAction = () => { dispatch(toggleMenu()); };
-    return {
-        toggleMenuAction,
-    };
-};
+const mapDispatchToProps = dispatch => (
+    {
+        toggle: () => { dispatch(toggleMenu()); },
+    }
+);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductPage);
