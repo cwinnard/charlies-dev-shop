@@ -2,8 +2,11 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import { Grid } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
+import MenuBar from '../functional/MenuBar';
 import HeroBanner from '../functional/HeroBanner';
 import heroImg from '../../images/hero.png';
 
@@ -36,8 +39,10 @@ const product3 = {
 
 class ProductPage extends Component {
     render() {
+        const { menuOpen, toggleMenu } = this.props;
         return (
             <div>
+                <MenuBar menuOpen={menuOpen} onClose={toggleMenu} />
                 <HeroBanner image={heroImg} alt="computer closeup" />
                 <Grid container className="productsContainer" spacing={24}>
                     <Grid item sm={4} xs={12}>
@@ -55,4 +60,17 @@ class ProductPage extends Component {
     }
 }
 
-export default ProductPage;
+ProductPage.propTypes = {
+    menuOpen: PropTypes.bool.isRequired,
+    toggleMenu: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = (state) => {
+    const { menuOpen, toggleMenu } = state;
+    return {
+        menuOpen,
+        toggleMenu,
+    };
+};
+
+export default connect(mapStateToProps, null)(ProductPage);

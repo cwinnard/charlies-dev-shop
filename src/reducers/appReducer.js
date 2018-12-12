@@ -1,9 +1,9 @@
-const appReducer = (state = [], action) => {
-    const newState = { ...state };
+import appDefaultState from './appDefaultState';
+
+const appReducer = (state = appDefaultState, action) => {
     switch (action.type) {
     default:
-        newState.loaded = true;
-        return newState;
+        return state;
     }
 };
 
