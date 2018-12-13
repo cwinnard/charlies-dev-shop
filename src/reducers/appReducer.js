@@ -6,6 +6,7 @@ const appReducer = (state = appDefaultState, action) => {
     case 'TOGGLE_MENU':
         console.log(state.menuVisible);
         newState.menuVisible = !state.menuVisible;
+        console.log(newState);
         return newState;
     default:
         return state;
