@@ -2,17 +2,20 @@ import { AppBar, Menu } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { connect } from 'react-redux';
+
+import toggleMenu from '../../reducers/actions';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
 
-const MenuBar = ({ menuVisable, toggleMenu }) => (
+const MenuBar = ({ menuVisible, toggle }) => (
     <AppBar className="header" position="static" color="primary">
         <div className="menuContainer">
             <div className="menu">
-                <MenuIcon onClick={toggleMenu} />
+                <MenuIcon onClick={toggle} />
                 <Menu
-                    open={menuVisable}
-                    onClose={toggleMenu}
+                    open={menuVisible}
+                    onClose={toggle}
                 />
             </div>
             <div className="shopName">
@@ -23,8 +26,21 @@ const MenuBar = ({ menuVisable, toggleMenu }) => (
 );
 
 MenuBar.propTypes = {
-    menuVisable: PropTypes.bool.isRequired,
-    toggleMenu: PropTypes.func.isRequired,
+    menuVisible: PropTypes.bool.isRequired,
+    toggle: PropTypes.func.isRequired,
 };
 
-export default MenuBar;
+const mapStateToProps = (state) => {
+    const { menuVisible } = state;
+    return {
+        menuVisible,
+    };
+};
+
+const mapDispatchToProps = dispatch => (
+    {
+        toggle: () => { dispatch(toggleMenu()); },
+    }
+);
+
+export default connect(mapStateToProps, mapDispatchToProps)(MenuBar);
