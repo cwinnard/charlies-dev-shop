@@ -6,7 +6,7 @@ import formReducer from './reducers/formReducer';
 const initStore = () => {
     const store = createStore(combineReducers({
         app: appReducer,
-        inquiryForm: formReducer,
+        inquiry: formReducer,
     }));
     return store;
 };
