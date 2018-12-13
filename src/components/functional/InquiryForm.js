@@ -7,8 +7,9 @@ import {
     Grid,
     TextField,
 } from '@material-ui/core';
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { connect } from 'react-redux';
 
 
 const NEW_INQUIRY_URL = 'https://charlie-system.herokuapp.com/inquiry/new';
@@ -138,4 +139,10 @@ InquiryForm.propTypes = {
     action: PropTypes.func.isRequired,
 };
 
-export default InquiryForm;
+const mapDispatchToProps = dispatch => (
+    {
+        action: () => { dispatch(postForm()); },
+    }
+);
+
+export default connect(null, mapDispatchToProps)(InquiryForm);

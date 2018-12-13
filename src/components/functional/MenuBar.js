@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { toggleMenu } from '../../reducers/actions';
+import toggleMenu from '../../redux/actions/menuActions';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
 

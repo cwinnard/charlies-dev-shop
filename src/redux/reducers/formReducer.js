@@ -1,4 +1,4 @@
-const inquiryReducer = (state = [], action) => {
+const formReducer = (state = [], action) => {
     const newState = state;
     switch (action.type) {
     case 'SUBMIT_FORM':
@@ -9,4 +9,4 @@ const inquiryReducer = (state = [], action) => {
     }
 };
 
-export default inquiryReducer;
+export default formReducer;
