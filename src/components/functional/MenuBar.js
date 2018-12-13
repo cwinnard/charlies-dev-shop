@@ -31,7 +31,7 @@ MenuBar.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    const { menuVisible } = state.menu;
+    const { menuVisible } = state.app;
     return {
         menuVisible,
     };
