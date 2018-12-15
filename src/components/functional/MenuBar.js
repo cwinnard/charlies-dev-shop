@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MenuSlider from './MenuSlider';
+import MenuDrawer from './MenuSlider';
 import toggleMenu from '../../redux/actions/menuActions';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
@@ -14,7 +14,7 @@ const MenuBar = ({ menuVisible, toggle }) => (
         <div className="menuContainer">
             <div className="menu">
                 <MenuIcon onClick={toggle} />
-                <MenuSlider
+                <MenuDrawer
                     open={menuVisible}
                     onClose={toggle}
                 />

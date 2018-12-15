@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-const MenuSlider = ({ open, onClose }) => (
+const MenuDrawer = ({ open, onClose }) => (
     <Drawer
         anchor="left"
         onClose={onClose}
@@ -55,10 +55,10 @@ const MenuSlider = ({ open, onClose }) => (
     </Drawer>
 );
 
-MenuSlider.propTypes = {
+MenuDrawer.propTypes = {
     open: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
 };
 
 
-export default MenuSlider;
+export default MenuDrawer;
