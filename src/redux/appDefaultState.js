@@ -1,5 +1,5 @@
 const appDefaultState = {
-    menuVisible: true,
+    menuVisible: false,
 };
 
 export default appDefaultState;

@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import MenuBar from './components/functional/MenuBar';
 import DataTablePage from './components/stateful/DataTablePage';
 import EmailSignupPage from './components/stateful/EmailSignupPage';
 import InquiryPage from './components/stateful/InquiryPage';
@@ -16,6 +17,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <MenuBar />
                 <Switch>
                     <Route exact path="/ecommerce" component={ProductPage} />
                     <Route exact path="/inquiry" component={InquiryPage} />

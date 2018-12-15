@@ -1,5 +1,7 @@
 import {
+    Divider,
     Drawer,
+    List,
     ListItem,
     ListItemIcon,
     ListItemText,
@@ -20,38 +22,42 @@ const MenuDrawer = ({ open, onClose }) => (
         open={open}
         variant="temporary"
     >
-        <Link to="/ecommerce">
-            <ListItem button>
-                <ListItemIcon>
-                    <DollarSign />
-                </ListItemIcon>
-                <ListItemText primary="eCommerce" />
-            </ListItem>
-        </Link>
-        <Link to="/email">
-            <ListItem button>
-                <ListItemIcon>
-                    <Mail />
-                </ListItemIcon>
-                <ListItemText primary="email" />
-            </ListItem>
-        </Link>
-        <Link to="/data">
-            <ListItem button>
-                <ListItemIcon>
-                    <Assessment />
-                </ListItemIcon>
-                <ListItemText primary="data" />
-            </ListItem>
-        </Link>
-        <Link to="/inquiry">
-            <ListItem button>
-                <ListItemIcon>
-                    <Code />
-                </ListItemIcon>
-                <ListItemText primary="request yours" />
-            </ListItem>
-        </Link>
+        <h5> Sample App Menu </h5>
+        <Divider />
+        <List>
+            <Link to="/ecommerce">
+                <ListItem button>
+                    <ListItemIcon>
+                        <DollarSign />
+                    </ListItemIcon>
+                    <ListItemText primary="eCommerce" />
+                </ListItem>
+            </Link>
+            <Link to="/email">
+                <ListItem button>
+                    <ListItemIcon>
+                        <Mail />
+                    </ListItemIcon>
+                    <ListItemText primary="email" />
+                </ListItem>
+            </Link>
+            <Link to="/data">
+                <ListItem button>
+                    <ListItemIcon>
+                        <Assessment />
+                    </ListItemIcon>
+                    <ListItemText primary="data" />
+                </ListItem>
+            </Link>
+            <Link to="/inquiry">
+                <ListItem button>
+                    <ListItemIcon>
+                        <Code />
+                    </ListItemIcon>
+                    <ListItemText primary="request yours" />
+                </ListItem>
+            </Link>
+        </List>
     </Drawer>
 );
 
