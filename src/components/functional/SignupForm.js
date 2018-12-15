@@ -1,3 +1,4 @@
+import axios from 'axios';
 import {
     Button,
     Card,
@@ -6,6 +7,12 @@ import {
     TextField,
 } from '@material-ui/core';
 import React from 'react';
+
+const NEW_USER_URL = 'https://charlie-system.herokuapp.com/users/new';
+
+const postForm = () => {
+    axios.post(NEW_USER_URL, {});
+};
 
 const SignupForm = () => (
     <Card>
@@ -20,6 +27,7 @@ const SignupForm = () => (
                     color="primary"
                     variant="contained"
                     size="large"
+                    onClick={postForm}
                 >
                     Start
                 </Button>
