@@ -18,8 +18,8 @@ import PropTypes from 'prop-types';
 const MenuDrawer = ({ open, onClose }) => (
     <Drawer
         anchor="left"
-        onClose={onClose}
         open={open}
+        onClose={onClose}
         variant="temporary"
     >
         <h5> Sample App Menu </h5>

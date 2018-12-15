@@ -1,7 +1,8 @@
 /* eslint react/jsx-one-expression-per-line: 0 */
 /* eslint react/prefer-stateless-function: 0 */
 
-import { Grid } from '@material-ui/core';
+import { Grid, withStyles } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import HeroBanner from '../functional/HeroBanner';
@@ -34,13 +35,18 @@ const product3 = {
     point3: '3 sauce varieties!',
 };
 
+const gridStyles = {
+    margin: '0 auto',
+};
+
 class ProductPage extends Component {
     render() {
+        const { classes } = this.props;
         return (
             <div>
-                <div>
+                <div className="productCardMain">
                     <HeroBanner image={heroImg} alt="computer closeup" />
-                    <Grid container className="productsContainer" spacing={24}>
+                    <Grid container className={classes} spacing={24}>
                         <Grid item sm={4} xs={12}>
                             <ProductCard product={product1} />
                         </Grid>
@@ -57,4 +63,8 @@ class ProductPage extends Component {
     }
 }
 
-export default ProductPage;
+ProductPage.propTypes = {
+    classes: PropTypes.shape({}).isRequired,
+};
+
+export default withStyles(gridStyles)(ProductPage);

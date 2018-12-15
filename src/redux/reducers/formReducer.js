@@ -2,7 +2,7 @@ const formReducer = (state = [], action) => {
     const newState = state;
     switch (action.type) {
     case 'SUBMIT_FORM':
-        newState.menuVisible = !state.menuVisible;
+        newState.submitted = true;
         return newState;
     default:
         return state;

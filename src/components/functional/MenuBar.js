@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MenuDrawer from './MenuSlider';
+import MenuDrawer from './MenuDrawer';
 import toggleMenu from '../../redux/actions/menuActions';
 
 const SHOPNAME = 'Charlie\'s Dev Shop';
@@ -32,6 +32,7 @@ MenuBar.propTypes = {
 };
 
 const mapStateToProps = (state) => {
+    console.log(state);
     const { menuVisible } = state.app;
     console.log(menuVisible);
     return {
