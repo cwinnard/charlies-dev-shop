@@ -46,7 +46,7 @@ class ProductPage extends Component {
             <div>
                 <div className="productCardMain">
                     <HeroBanner image={heroImg} alt="computer closeup" />
-                    <Grid container className={classes} spacing={24}>
+                    <Grid container style={classes} spacing={24}>
                         <Grid item sm={4} xs={12}>
                             <ProductCard product={product1} />
                         </Grid>
