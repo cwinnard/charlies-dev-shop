@@ -2,7 +2,6 @@
 /* eslint jsx-a11y/label-has-associated-control: 0 */
 /* eslint jsx-a11y/label-has-for: 0 */
 
-import { Button } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
@@ -20,14 +19,7 @@ let RForm = (props) => {
                 <Field name="testField" component="input" type="text" />
             </div>
 
-            <Button
-                color="primary"
-                variant="contained"
-                size="large"
-                onClick={() => {}}
-            >
-                Submit
-            </Button>
+            <button type="submit">Submit</button>
         </form>
     );
 };
