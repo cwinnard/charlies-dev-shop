@@ -9,7 +9,7 @@ const initStore = () => {
     const store = createStore(combineReducers({
         app: appReducer,
         inquiry: formReducer,
-        rform: rformReducer,
+        form: rformReducer,
     }),
     applyMiddleware(thunk));
     return store;
