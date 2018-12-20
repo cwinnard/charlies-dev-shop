@@ -53,9 +53,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     const { menuVisible } = state.app;
-    console.log(menuVisible);
     return {
         menuVisible,
     };

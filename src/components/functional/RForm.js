@@ -1,3 +1,4 @@
+/* eslint import/no-mutable-exports: 0 */
 /* eslint jsx-a11y/label-has-associated-control: 0 */
 /* eslint jsx-a11y/label-has-for: 0 */
 
@@ -6,7 +7,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
-const FormTemplate = (props) => {
+let RForm = (props) => {
     const { handleSubmit } = props;
     return (
         <form onSubmit={handleSubmit}>
@@ -35,9 +36,9 @@ const createForm = reduxForm({
     form: 'test',
 });
 
-const RForm = createForm(FormTemplate);
+RForm = createForm(RForm);
 
-FormTemplate.propTypes = {
+RForm.propTypes = {
     handleSubmit: PropTypes.func.isRequired,
 };
 
