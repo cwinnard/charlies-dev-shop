@@ -35,10 +35,10 @@ const createForm = reduxForm({
     form: 'test',
 });
 
-const Form = createForm(FormTemplate);
+const RForm = createForm(FormTemplate);
 
 FormTemplate.propTypes = {
     handleSubmit: PropTypes.func.isRequired,
 };
 
-export default Form;
+export default RForm;
