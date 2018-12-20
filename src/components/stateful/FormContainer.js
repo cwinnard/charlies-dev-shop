@@ -13,7 +13,7 @@ class FormContainer extends Component {
     render() {
         return (
             <div>
-                <RForm onSubmit={this.submit} />
+                <RForm handleSubmit={this.submit} />
             </div>
         );
     }
