@@ -13,6 +13,7 @@ import './App.css';
 import MenuDrawer from './components/functional/MenuDrawer';
 import DataTablePage from './components/stateful/DataTablePage';
 import EmailSignupPage from './components/stateful/EmailSignupPage';
+import FormContainer from './components/stateful/FormContainer';
 import InquiryPage from './components/stateful/InquiryPage';
 import LandingPage from './components/stateful/LandingPage';
 import ProductPage from './components/stateful/ProductPage';
@@ -40,7 +41,7 @@ class App extends Component {
                     </div>
                 </AppBar>
                 <Switch>
-                    <Route exact path="/" component={LandingPage} />
+                    <Route exact path="/" component={FormContainer} />
                     <Route exact path="/ecommerce" component={ProductPage} />
                     <Route exact path="/inquiry" component={InquiryPage} />
                     <Route exact path="/email" component={EmailSignupPage} />

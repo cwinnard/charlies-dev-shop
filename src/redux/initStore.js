@@ -1,4 +1,5 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
+import { reducer as rformReducer } from 'redux-form';
 import thunk from 'redux-thunk';
 
 import appReducer from './reducers/appReducer';
@@ -8,6 +9,7 @@ const initStore = () => {
     const store = createStore(combineReducers({
         app: appReducer,
         inquiry: formReducer,
+        rform: rformReducer,
     }),
     applyMiddleware(thunk));
     return store;
