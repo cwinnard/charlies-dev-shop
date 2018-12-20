@@ -15,7 +15,7 @@ import DataTablePage from './components/stateful/DataTablePage';
 import EmailSignupPage from './components/stateful/EmailSignupPage';
 import FormContainer from './components/stateful/FormContainer';
 import InquiryPage from './components/stateful/InquiryPage';
-import LandingPage from './components/stateful/LandingPage';
+// import LandingPage from './components/stateful/LandingPage';
 import ProductPage from './components/stateful/ProductPage';
 import toggleMenu from './redux/actions/menuActions';
 
